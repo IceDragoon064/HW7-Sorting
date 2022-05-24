@@ -1,3 +1,12 @@
+package Submission;
+import java.util.Arrays;
+
+/**
+ * Mission Two is to use in-place sorting to add new value to an array and remove the smallest value 
+ * @author Leon Lu
+ * @version May 24, 2022
+ * @param <T> The type script for generic variable
+ */
 public class MissionTwo<T extends Comparable<? super T>> 
 {
 
@@ -24,7 +33,7 @@ public class MissionTwo<T extends Comparable<? super T>>
 	public void add(T item) 
 	{
 		// TODO Method
-		
+		System.out.println("Adding " + item);
 		// Check if the array is full. 
 		if(itemSize == this.data.length - 1)
 		{
@@ -38,6 +47,7 @@ public class MissionTwo<T extends Comparable<? super T>>
 			{
 				this.data[0] = item;
 				itemSize++;
+				System.out.println(Arrays.deepToString(data));
 			}
 			
 			// Sort the array after adding a new element
@@ -79,6 +89,7 @@ public class MissionTwo<T extends Comparable<? super T>>
 						currentIndex--;
 					}
 				}
+				System.out.println(Arrays.deepToString(data));
 			}		
 		}
 	}
