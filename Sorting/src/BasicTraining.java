@@ -1,3 +1,8 @@
+/**
+ * This class simulates quick sort
+ * @author Leon Lu
+ * @version May 23, 2022
+ */
 public class BasicTraining 
 {
 	private int leftStartIndex, leftTailIndex, rightStartIndex, rightTailIndex;
@@ -8,8 +13,8 @@ public class BasicTraining
 	 * in-place (no temporary arrays)
 	 * O(n log n)
 	 * 
-	 * @param array
-	 * @return a sorted array
+	 * @param array - the unsorted array
+	 * @return a sorted array - the sorted array
 	 */
 	public static <T extends Comparable<? super T>> T[] quickSort(T[] array) 
 	{
